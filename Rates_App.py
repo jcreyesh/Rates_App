@@ -5,13 +5,14 @@ import plotly.express as px
 import streamlit as sl
 import altair as alt
 
-# data = pd.read_csv("C:/Users/charl/Desktop/VS_Code/2024/STREAMLIT_APP/tablero_julia_mayo.csv", encoding="latin-1")
+# data = pd.read_csv("C:/Users/charl/Desktop/VS_Code/2024/STREAMLIT_APP/tablero_julia_mayo_sureste.csv", encoding="latin-1")
 # data["Contrato"].fillna("", inplace=True)
 
 file = sl.file_uploader("Cargar la base de datos.")
 if file is not None:
-    df = pd.read_csv(file)
-    sl.write(df)
+    data = pd.read_csv(file, encoding="latin-1")
+    # df["Contrato"].fillna("", inplace = True)
+    # sl.write(data)
 
 # Sidebar
 sl.title("Producción por Pozo")
