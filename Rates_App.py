@@ -6,7 +6,7 @@ import streamlit as sl
 import altair as alt
 
 # wide_mode
-st.set_page_config(layout="wide")
+sl.set_page_config(layout="wide")
 
 try:
     file = sl.file_uploader("Cargar la base de datos.")
