@@ -67,4 +67,4 @@ try:
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_ac(Mbd)"], select_pozo)
 
 except:
-    sl.write("Favor de cargar la Base de Datos.")
+    sl.write("Aún no se ha cargado la Base de Datos.")
