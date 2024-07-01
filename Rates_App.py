@@ -5,7 +5,7 @@ import plotly.express as px
 import streamlit as sl
 import altair as alt
 
-data = pd.read_csv("C:/Users/charl/Desktop/VS_Code/2024/STREAMLIT_APP/tablero_julia.csv", encoding="latin-1")
+# data = pd.read_csv("C:/Users/charl/Desktop/VS_Code/2024/STREAMLIT_APP/tablero_julia_mayo.csv", encoding="latin-1")
 # data["Contrato"].fillna("", inplace=True)
 
 # Sidebar
