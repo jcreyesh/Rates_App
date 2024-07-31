@@ -29,6 +29,8 @@ try:
     select_pozo = sl.selectbox("Seleccione el pozo", lista_pozos)
     
     df_pozo = data_pozos[data_pozos["Pozo"] == select_pozo]
+
+    sl.write(df_pozo)
     
     # Plots
     def plot_oil(df, x, y, pozo):
