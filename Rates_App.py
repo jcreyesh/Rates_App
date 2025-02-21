@@ -16,7 +16,7 @@ try:
         # sl.write(data)
     
     # Sidebar
-    sl.title("Producción por Pozo")
+    sl.title("Producción CNH")
     lista_cuencas = list(data.Cuenca.unique())
     select_cuenca = sl.selectbox("Seleccion la Cuenca", lista_cuencas)
     
