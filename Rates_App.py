@@ -53,23 +53,23 @@ try:
     
     # Oil
     plot_oil(df_pozo, df_pozo["Fecha"], df_pozo["Qo_(Mbd)"], select_pozo)
-    plot_oil(df_pozo, df_pozo["Fecha"], df_pozo["Qo_ac(Mbd)"], select_pozo)
+    # plot_oil(df_pozo, df_pozo["Fecha"], df_pozo["Qo_ac(Mbd)"], select_pozo)
     
     # Gas
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qga_(MMpcd)"], select_pozo)
-    plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qga_ac(MMpcd)"], select_pozo)
+    # plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qga_ac(MMpcd)"], select_pozo)
     
     # Water
     plot_water(df_pozo, df_pozo["Fecha"], df_pozo["Qw_(Mbd)"], select_pozo)
-    plot_water(df_pozo, df_pozo["Fecha"], df_pozo["Qw_ac(Mbd)"], select_pozo)
+    # plot_water(df_pozo, df_pozo["Fecha"], df_pozo["Qw_ac(Mbd)"], select_pozo)
     
     # Non-associated Gas
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qgna_(MMpcd)"], select_pozo)
-    plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qgna_ac(MMpcd)"], select_pozo)
+    # plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qgna_ac(MMpcd)"], select_pozo)
     
     # Condensed oil
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_(Mbd)"], select_pozo)
-    plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_ac(Mbd)"], select_pozo)
+    # plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_ac(Mbd)"], select_pozo)
 
 except:
     sl.write("Aún no se ha cargado la Base de Datos.")
