@@ -24,7 +24,7 @@ try:
     # lista_campos = list(data_cuencas.Contrato.unique())
     # select_campo = sl.selectbox("Seleccione el Contrato o Asignación", lista_campos)
     
-    data_pozos = data[data["Contrato"] == select_cuenca]
+    data_pozos = data[data["Cuenca"] == select_cuenca]
     lista_pozos = list(data_pozos.Pozo.unique())
     select_pozo = sl.selectbox("Seleccione el pozo", lista_pozos)
     
