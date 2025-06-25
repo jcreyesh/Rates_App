@@ -21,10 +21,10 @@ try:
     select_cuenca = sl.selectbox("Seleccion la Cuenca", lista_cuencas)
     
     data_cuencas = data[data["Cuenca"] == select_cuenca]
-    lista_campos = list(data_cuencas.Contrato.unique())
-    select_campo = sl.selectbox("Seleccione el Contrato o Asignación", lista_campos)
+    # lista_campos = list(data_cuencas.Contrato.unique())
+    # select_campo = sl.selectbox("Seleccione el Contrato o Asignación", lista_campos)
     
-    data_pozos = data[data["Contrato"] == select_campo]
+    data_pozos = data[data["Contrato"] == select_cuenca]
     lista_pozos = list(data_pozos.Pozo.unique())
     select_pozo = sl.selectbox("Seleccione el pozo", lista_pozos)
     
