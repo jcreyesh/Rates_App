@@ -21,8 +21,8 @@ try:
     select_cuenca = sl.selectbox("Seleccion la Cuenca", lista_cuencas)
     
     data_cuencas = data[data["Cuenca"] == select_cuenca]
-    # lista_campos = list(data_cuencas.Contrato.unique())
-    # select_campo = sl.selectbox("Seleccione el Contrato o Asignación", lista_campos)
+    lista_campos = list(data_cuencas.Contrato.unique())
+    select_campo = sl.selectbox("Seleccione el Contrato o Asignación", lista_campos)
     
     data_pozos = data[data["Cuenca"] == select_cuenca]
     lista_pozos = list(data_pozos.Pozo.unique())
@@ -57,19 +57,19 @@ try:
     
     # Gas
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qga_(MMpcd)"], select_pozo)
-    plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qga_ac(MMpcd)"], select_pozo)
+    # plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qga_ac(MMpcd)"], select_pozo)
     
     # Water
     plot_water(df_pozo, df_pozo["Fecha"], df_pozo["Qw_(Mbd)"], select_pozo)
-    plot_water(df_pozo, df_pozo["Fecha"], df_pozo["Qw_ac(Mbd)"], select_pozo)
+    # plot_water(df_pozo, df_pozo["Fecha"], df_pozo["Qw_ac(Mbd)"], select_pozo)
     
     # Non-associated Gas
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qgna_(MMpcd)"], select_pozo)
-    plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qgna_ac(MMpcd)"], select_pozo)
+    # plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Qgna_ac(MMpcd)"], select_pozo)
     
     # Condensed oil
     plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_(Mbd)"], select_pozo)
-    plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_ac(Mbd)"], select_pozo)
+    # plot_gas(df_pozo, df_pozo["Fecha"], df_pozo["Cond_ac(Mbd)"], select_pozo)
 
 except:
     sl.write("Aún no se ha cargado la Base de Datos.")
