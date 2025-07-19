@@ -17,11 +17,11 @@ try:
     
     # Sidebar
     sl.title("Producción por Pozo Basada en datos de la CNH")
-    lista_cuencas = list(data.Cuenca.unique())
-    select_cuenca = sl.selectbox("Seleccion la Cuenca", lista_cuencas)
+    # lista_cuencas = list(data.Cuenca.unique())
+    # select_cuenca = sl.selectbox("Seleccion la Cuenca", lista_cuencas)
     
-    data_cuencas = data[data["Cuenca"] == select_cuenca]
-    lista_campos = list(data_cuencas.Contrato.unique())
+    # data_cuencas = data[data["Cuenca"] == select_cuenca]
+    lista_campos = list(data.Contrato.unique())
     select_campo = sl.selectbox("Seleccione el Contrato o Asignación", lista_campos)
     
     data_pozos = data[data["Contrato"] == select_campo]
